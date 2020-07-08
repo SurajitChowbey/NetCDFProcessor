@@ -30,5 +30,5 @@ To Run it:
 
 5 Apply -> Run
 
-You can also call the main method of App class, from your class with [path to .nc file] in first position in main String[] argument.
+You can also call the App.main method, from your class with [path to .nc file] in first position in main String[] argument.
  
