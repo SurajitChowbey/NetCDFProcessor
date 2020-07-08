@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.ns</groupId>
+	<artifactId>NetCDFProcessor</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>NetCDFProcessor</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<netcdfJavaVersion>5.3.3</netcdfJavaVersion>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/edu.ucar/cdm-core -->
+		<dependency>
+			<groupId>edu.ucar</groupId>
+			<artifactId>cdm-core</artifactId>
+			<version>${netcdfJavaVersion}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.esri.geometry</groupId>
+			<artifactId>esri-geometry-api</artifactId>
+			<version>2.2.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/edu.ucar/netcdf4 -->
+		<!-- <dependency> <groupId>edu.ucar</groupId> <artifactId>netcdf4</artifactId> 
+			<version>${netcdfJavaVersion}</version> <scope>runtime</scope> </dependency> -->
+
+
+		<dependency>
+			<groupId>edu.ucar</groupId>
+			<artifactId>netcdf4</artifactId>
+			<version>${netcdfJavaVersion}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>1.7.30</version>
+			<scope>test</scope>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>unidata-all</id>
+			<name>Unidata All</name>
+			<url>https://artifacts.unidata.ucar.edu/repository/unidata-all/</url>
+		</repository>
+	</repositories>
+</project>
