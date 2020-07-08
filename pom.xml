@@ -31,9 +31,6 @@
 			<version>2.2.3</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/edu.ucar/netcdf4 -->
-		<!-- <dependency> <groupId>edu.ucar</groupId> <artifactId>netcdf4</artifactId> 
-			<version>${netcdfJavaVersion}</version> <scope>runtime</scope> </dependency> -->
 
 
 		<dependency>
@@ -43,7 +40,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
