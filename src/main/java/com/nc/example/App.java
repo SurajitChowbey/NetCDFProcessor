@@ -1,15 +1,15 @@
 package com.nc.example;
 
+import com.nc.Reader;
 import com.nc.data.FileSettings;
 import com.nc.data.InputData;
-import com.nc.data.Reader;
 
 import ucar.nc2.NetcdfFile;
 
 
 public class App {
 
-	public static String filePath = "C:\\Users\\SKC\\Desktop\\WFH\\per\\terrain_37_38_-123_-122_cut.nc";
+	public static String filePath = "[path to .nc file]";
 	
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws Exception {
