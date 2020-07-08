@@ -78,7 +78,7 @@ public class OutputData {
 	}
 
 	public OutputData() {
-		this.terrrainPointList = new ArrayList<>();
+		this.terrrainPointList = new ArrayList<TerrainPoint>();
 	}
 
 	public OutputData(long noOfPoints, double minHeight, double maxHeight, double averageHeight, double medianOfHeight,
@@ -90,7 +90,7 @@ public class OutputData {
 		this.averageHeight = averageHeight;
 		this.medianOfHeight = medianOfHeight;
 		this.weightedAverage = weightedAverage;
-		this.terrrainPointList = new ArrayList<>();
+		this.terrrainPointList = new ArrayList<TerrainPoint>();
 	}
 
 	@Override

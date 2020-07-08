@@ -147,8 +147,8 @@ public class Reader {
 			column = lonData;
 		}
 
-		List<Double> listOfHeights = new ArrayList<>();
-		List<TerrainPoint> listOfPoints = new ArrayList<>();
+		List<Double> listOfHeights = new ArrayList<Double>();
+		List<TerrainPoint> listOfPoints = new ArrayList<TerrainPoint>();
 
 		double heightSum = 0d;
 		double weightedHeightSum = 0d;

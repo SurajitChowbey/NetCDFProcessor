@@ -9,7 +9,7 @@ import ucar.nc2.NetcdfFile;
 
 public class App {
 
-	public static String filePath = "[path to .nc file]";
+	public static String filePath = "C:\\Users\\SKC\\Desktop\\WFH\\per\\terrain_37_38_-123_-122_cut.nc";
 	
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws Exception {
@@ -19,9 +19,11 @@ public class App {
 			
 			if(args != null && args.length > 0) {
 				filePath = args[0];
-			} else {
-				throw new Exception("Invalid input");
 			}
+			
+//			else {
+//				throw new Exception("Invalid input");
+//			}
 			
 			ncfile = NetcdfFile.open(filePath);
 			
