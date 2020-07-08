@@ -18,6 +18,19 @@ public class InputData {
 	
 	private int srid = 4326;
 	
+	/**
+	 * Create a instance of Input data
+	 * 
+	 * Default SRID 4326
+	 * 
+	 * You can change lon and lat value to meter, then you need set appropriate SRID {@link InputData#setSrid(int)}
+	 * 
+	 * @param lon x position of point
+	 * @param lat y position of point
+	 * @param radius in meters
+	 * @param closestPointWeight weight value in percentage, using it in weightedAverage calculation
+	 * @param furthestPointWeight weight value in percentage, using it in weightedAverage calculation
+	 */
 	public InputData(double lon, double lat, double radius, float closestPointWeight, float furthestPointWeight) {
 		this.lon = lon;
 		this.lat = lat;

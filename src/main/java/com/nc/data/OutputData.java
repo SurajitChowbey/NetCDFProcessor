@@ -81,6 +81,15 @@ public class OutputData {
 		this.terrrainPointList = new ArrayList<TerrainPoint>();
 	}
 
+	/**
+	 * 
+	 * @param noOfPoints no of points
+	 * @param minHeight minimum height
+	 * @param maxHeight maximum height
+	 * @param averageHeight average height
+	 * @param medianOfHeight median of height
+	 * @param weightedAverage weighted average
+	 */
 	public OutputData(long noOfPoints, double minHeight, double maxHeight, double averageHeight, double medianOfHeight,
 			double weightedAverage) {
 		super();

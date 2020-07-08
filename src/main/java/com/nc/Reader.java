@@ -52,13 +52,13 @@ public class Reader {
 	 * <p>
 	 * Weighted average of the Altitude value of the points within the radius.
 	 * Weight the closest points at {@link InputData#getClosestPointWeight()} and
-	 * {@link InputData#getFurthestPointWeight()} points at 50% with a linear
+	 * furthest points at {@link InputData#getFurthestPointWeight()} with a linear
 	 * distribution
 	 * </p>
 	 * 
 	 * @param ncfile
-	 * @param fileSettings
-	 * @param inputData
+	 * @param fileSettings contains the Variable names
+	 * @param inputData 
 	 * @return An object of <tt>OutputData</tt>
 	 * @throws IOException
 	 * @throws LocationOutOfBoundException

@@ -24,11 +24,15 @@ public class App {
 			}
 			
 			ncfile = NetcdfFile.open(filePath);
-			
+			// setting variable names
 			FileSettings fileSettings = new FileSettings("lat", "lon", "Band1");
+			// creating input data instance
 			InputData inputData = new InputData(-122.4096296296715, 37.76450528869417, 7640, 100f, 50f);
+			
 			long time = System.currentTimeMillis();
+			
 			System.out.println(Reader.processFile(ncfile, fileSettings, inputData));;
+			
 			System.out.println("Taken: " + ((System.currentTimeMillis() - time) / 1000f) + " sec." );
 		} finally {
 			if (ncfile != null) {

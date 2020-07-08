@@ -14,6 +14,12 @@ public class FileSettings {
 	private String lonName;
 	private String bandName;
 
+	/**
+	 * 
+	 * @param latName latitude variable name
+	 * @param lonName longitude variable name
+	 * @param bandName band name which contain the height information
+	 */
 	public FileSettings(String latName, String lonName, String bandName) {
 		this.latName = latName;
 		this.lonName = lonName;
