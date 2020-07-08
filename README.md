@@ -26,9 +26,23 @@ To Run it:
 
 3 Run As -> Run Configurations
 
-4 In Program Arguments under Arguments tab add the path to .nc file
+4 In Program Arguments under Arguments tab add the *[path to .nc file]*
 
 5 Apply -> Run
 
-You can also call the App.main method, from your class with [path to .nc file] in first position in main String[] argument.
+You can also call the App.main method, from your class with *[path to .nc file]* in first position in main String[] argument.
+
+#### To build project in eclipse
+
+1 Right click on project
+
+2 Run As -> Maven Build
+
+3 Set **clean install** as goals
+
+4 Apply -> Run
+
+5 On successful build you will get **NetCDFProcessor-X.X.X-SNAPSHOT.jar** in target folder
+
+
  
