@@ -14,6 +14,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<netcdfJavaVersion>5.3.3</netcdfJavaVersion>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -31,8 +33,6 @@
 			<version>2.2.3</version>
 		</dependency>
 
-
-
 		<dependency>
 			<groupId>edu.ucar</groupId>
 			<artifactId>netcdf4</artifactId>
@@ -45,7 +45,7 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-jdk14</artifactId>
 			<version>1.7.30</version>
-			<scope>test</scope>
+			<!-- <scope>test</scope> -->
 		</dependency>
 
 
@@ -65,4 +65,5 @@
 			<url>https://artifacts.unidata.ucar.edu/repository/unidata-all/</url>
 		</repository>
 	</repositories>
+
 </project>

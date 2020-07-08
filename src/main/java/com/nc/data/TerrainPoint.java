@@ -122,16 +122,4 @@ public class TerrainPoint {
 	    return new OGCPoint(new Point(x, y), SpatialReference.create(4326));
 	}
 
-	public static void main(String[] args) {
-		OGCPoint pointA = (OGCPoint) OGCPoint.fromText("POINT(88 22)");
-		OGCPoint pointB = (OGCPoint) OGCPoint.fromText("POINT(89 22)");
-
-		System.out.println(TerrainPoint.toMarcetor(pointA).distance(TerrainPoint.toMarcetor(pointB)));
-		
-		System.out.println(TerrainPoint.toWGS84(TerrainPoint.toMarcetor(pointA)).asJson());
-		
-		System.out.println(TerrainPoint.toWGS84(TerrainPoint.toMarcetor(pointB)).asJson());
-
-	}
-
 }
