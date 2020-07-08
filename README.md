@@ -5,4 +5,4 @@ a.                   No. of points within the radius
 
 b.                   Min, Max, Average, Median values of the heights of all points within the radius
 
-c.                   Weighted average of the Altitude value of the points within the radius. Weight the closest points at 100% and furthest points at 50% with a linear distribution
+c.                   Weighted average of the Altitude value of the points within the radius. Weight the closest points at 100%(user input) and furthest points at 50%(user input) with a linear distribution
